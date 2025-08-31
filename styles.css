@@ -187,16 +187,30 @@ section h2 {
 }
 
 /* Floating Animation */
-@keyframes float {
-  0% {
-    transform: translateY(0);
+@keyframes gradient-x {
+  0%,
+  100% {
+    background-position: 0% 50%;
   }
   50% {
-    transform: translateY(-8px);
+    background-position: 100% 50%;
   }
-  100% {
-    transform: translateY(0);
-  }
+}
+
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 8s ease infinite;
+}
+
+/* Neon Glow Effect */
+.neon-button {
+  background: linear-gradient(90deg, #25d366, #128c7e);
+  box-shadow: 0 0 10px #25d366, 0 0 20px #25d366, 0 0 40px #128c7e;
+  transition: all 0.3s ease-in-out;
+}
+
+.neon-button:hover {
+  box-shadow: 0 0 20px #25d366, 0 0 40px #25d366, 0 0 80px #128c7e;
 }
 
 /* Responsive */

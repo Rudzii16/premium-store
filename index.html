@@ -277,29 +277,49 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section">
-      <div class="cta-container">
-        <div class="cta-icon">
-          <!-- Rocket SVG -->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512"
-            fill="white"
-            width="60"
-            height="60"
-          >
-            <path
-              d="M156 429c-8 20-27 39-47 47l-21 8 8-21c8-20 27-39 47-47l13-5zm173-173L218 367c-7-4-15-10-22-17s-13-15-17-22l111-111 39 39zm71-71c-23 23-48 36-72 43l-54-54c7-24 20-49 43-72 25-25 58-42 90-52 10-3 20 6 17 17-10 32-27 65-52 90z"
-            />
-          </svg>
+    <section class="cta-section relative text-white py-16 overflow-hidden">
+      <!-- Animated Gradient Background -->
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-pink-500 via-purple-600 to-indigo-600 animate-gradient-x"
+      ></div>
+
+      <!-- Overlay biar teks tetap jelas -->
+      <div class="absolute inset-0 bg-black/40"></div>
+
+      <!-- Content -->
+      <div class="relative max-w-4xl mx-auto text-center px-6">
+        <!-- Icon -->
+        <div class="flex justify-center mb-6">
+          <div class="bg-white/20 p-6 rounded-full shadow-lg animate-bounce">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              fill="white"
+              class="w-12 h-12"
+            >
+              <path
+                d="M156 429c-8 20-27 39-47 47l-21 8 8-21c8-20 27-39 47-47l13-5zm173-173L218 367c-7-4-15-10-22-17s-13-15-17-22l111-111 39 39zm71-71c-23 23-48 36-72 43l-54-54c7-24 20-49 43-72 25-25 58-42 90-52 10-3 20 6 17 17-10 32-27 65-52 90z"
+              />
+            </svg>
+          </div>
         </div>
-        <div class="cta-text">
-          <h2>Mau Langganan Sekarang?</h2>
-          <p>Klik tombol di bawah untuk langsung order via WhatsApp.</p>
-          <a href="https://wa.me/62xxxxxxxxx" class="btn-whatsapp">
-            💬 Chat via WhatsApp
-          </a>
-        </div>
+
+        <!-- Text -->
+        <h2 class="text-3xl md:text-4xl font-extrabold mb-4 drop-shadow-lg">
+          🚀 Mau Langganan Premium Sekarang?
+        </h2>
+        <p class="text-lg text-white/90 mb-8">
+          Nikmati akses penuh ke semua layanan premium dengan harga hemat &
+          garansi resmi.
+        </p>
+
+        <!-- Button -->
+        <a
+          href="https://wa.me/6285762128253"
+          class="inline-block neon-button text-white text-lg font-bold px-8 py-4 rounded-full shadow-xl transition transform hover:scale-110"
+        >
+          💬 Chat via WhatsApp
+        </a>
       </div>
     </section>
 
