@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Premium Store – Netflix, ChatGPT, Vidio, CapCut, Canva, Viu</title>
+    <meta
+      name="description"
+      content="Jual akun premium Netflix, ChatGPT, Vidio Platinum, CapCut Pro, Canva, dan Viu dengan harga terbaik dan bergaransi."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="sticky top-0 z-50">
+      <div id="navbar" class="shadow-lg relative bg-black/40 backdrop-blur-md">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="flex items-center justify-between py-4">
+            <!-- Logo -->
+            <a
+              href="#home"
+              class="text-white font-extrabold tracking-wide text-lg md:text-2xl"
+            >
+              PREMIUM STORE
+            </a>
+
+            <!-- Right Side -->
+            <div class="flex items-center gap-4">
+              <!-- Trusted Seller (desktop only) -->
+              <span
+                class="bg-green-600 text-white text-xs px-3 py-1 rounded-full font-semibold hidden md:inline"
+              >
+                Trusted Seller
+              </span>
+
+              <!-- Desktop Nav -->
+              <nav class="hidden md:flex gap-6 text-white font-medium">
+                <a href="#home" class="hover:text-red-400">Home</a>
+                <a href="#paket" class="hover:text-red-400">Paket</a>
+                <a href="#faq" class="hover:text-red-400">FAQ</a>
+                <!-- ✅ Order langsung ke WhatsApp -->
+                <a
+                  href="https://wa.me/6281234567890"
+                  target="_blank"
+                  class="hover:text-green-400"
+                >
+                  Order
+                </a>
+              </nav>
+
+              <!-- Mobile Menu Button -->
+              <button
+                id="menu-btn"
+                class="md:hidden text-white focus:outline-none text-2xl"
+              >
+                ☰
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Nav -->
+        <div
+          id="mobile-menu"
+          class="hidden flex-col bg-black/90 text-white font-medium space-y-4 px-6 py-6 md:hidden transition-all duration-300"
+        >
+          <a href="#home" class="hover:text-red-400">Home</a>
+          <a href="#paket" class="hover:text-red-400">Paket</a>
+          <a href="#faq" class="hover:text-red-400">FAQ</a>
+          <!-- ✅ Order langsung ke WhatsApp -->
+          <a
+            href="https://wa.me/6281234567890"
+            target="_blank"
+            class="hover:text-green-400"
+          >
+            Order
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Script -->
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+
+        // Ganti ikon ☰ ↔ ✕
+        if (mobileMenu.classList.contains("hidden")) {
+          menuBtn.textContent = "☰";
+        } else {
+          menuBtn.textContent = "✕";
+        }
+      });
+    </script>
+
+    <!-- Hero -->
+    <section id="home" class="relative overflow-hidden">
+      <!-- Background image -->
+      <div
+        class="absolute inset-0 bg-cover bg-center"
+        style="background-image: url('bg_herosection.jpg')"
+      ></div>
+      <!-- Overlay biar teks tetap kebaca -->
+      <div class="absolute inset-0 bg-black/60"></div>
+
+      <!-- Content -->
+      <div
+        class="max-w-6xl mx-auto px-4 py-20 md:py-28 relative text-center text-white"
+      >
+        <h1
+          class="text-3xl md:text-5xl font-black leading-tight drop-shadow-lg"
+        >
+          🎬 PREMIUM STORE – Netflix, ChatGPT, Vidio, CapCut, Canva, Viu 🎬
+        </h1>
+        <p class="mt-4 text-neutral-200 text-lg md:text-xl max-w-3xl mx-auto">
+          Tersedia berbagai pilihan akun premium bergaransi: Netflix, ChatGPT,
+          Vidio Platinum, CapCut Pro, Canva, dan Viu. Harga hemat, kualitas
+          maksimal!
+        </p>
+        <div class="mt-6">
+          <span
+            class="bg-yellow-400 text-black px-4 py-1 rounded-full text-sm font-semibold shadow"
+          >
+            🔥 Best Seller
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Paket Harga -->
+    <section id="paket" class="max-w-6xl mx-auto px-4 py-16">
+      <h2 class="text-2xl md:text-4xl font-extrabold text-center">
+        📦 Pilihan Paket
+      </h2>
+      <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Netflix -->
+        <div class="card">
+          <h3 class="card-title">🎬 NETFLIX PREMIUM</h3>
+          <ul class="card-list">
+            <li>🔹 1U1P: 1 Bulan Rp 25.500 | 3 Bulan Rp 85.000</li>
+            <li>🔹 Semi Private: 1 Bulan Rp 35.500 | 3 Bulan Rp 95.000</li>
+            <li>🔹 Private: 1 Bulan Rp 150.000</li>
+          </ul>
+        </div>
+
+        <!-- ChatGPT -->
+        <div class="card">
+          <h3 class="card-title">🤖 CHATGPT PREMIUM</h3>
+          <ul class="card-list">
+            <li>
+              🔹 1 Bulan Sharing<br />- Rp 35.000 (Reseller)<br />- Rp 40.000
+              (Pribadi)<br /><em>Login 1 Device Only</em>
+            </li>
+            <li>
+              🔹 1 Bulan Private via Invite – Rp 60.000<br /><em
+                >Garansi 30 Hari</em
+              >
+            </li>
+            <li>
+              🔹 3 Bulan Private Individual – Rp 200.000<br /><em
+                >Garansi 30 Hari</em
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Vidio -->
+        <div class="card">
+          <h3 class="card-title">📺 VIDIO PLATINUM</h3>
+          <ul class="card-list">
+            <li>🔹 Mobile: Rp 30.000</li>
+            <li>🔹 All Device: Rp 45.000</li>
+          </ul>
+        </div>
+
+        <!-- CapCut -->
+        <div class="card">
+          <h3 class="card-title">🎥 CAPCUT PRO</h3>
+          <p>💰 Harga: Rp 15.000 / bulan</p>
+          <ul class="card-list">
+            <li>Masa aktif 30 hari</li>
+            <li>Aktivasi via website resmi CapCut</li>
+            <li>Maksimal 2 perangkat</li>
+            <li>Akun bersifat private</li>
+          </ul>
+        </div>
+
+        <!-- Canva -->
+        <div class="card">
+          <h3 class="card-title">🎨 CANVA PRO</h3>
+          <ul class="card-list">
+            <li>
+              🏷 Member Pro<br />1 Bulan = Rp 7.000<br />1 Tahun = Rp 20.000
+            </li>
+            <li>Lifetime Rp 27.000 (Garansi 6 Bulan)</li>
+            <li>Lifetime Rp 32.000 (Garansi 1 Tahun)</li>
+            <li><em>Note: Designer +Rp 1.000</em></li>
+          </ul>
+          <h4 class="mt-4 font-bold">CANVA OWNER 1 MONTH</h4>
+          <p>💰 Rp 10.000</p>
+          <ul class="card-list">
+            <li>✅ Butuh email pembeli</li>
+            <li>✅ Bergaransi</li>
+            <li>✅ Bukan Canva Edu</li>
+            <li>✅ Stok Unlimited</li>
+          </ul>
+        </div>
+
+        <!-- Viu -->
+        <div class="card">
+          <h3 class="card-title">📱 VIU TODAY</h3>
+          <ul class="card-list">
+            <li>
+              Anti Limit<br />๑ 1 Bulan: Rp 3.000<br />๑ 3 Bulan: Rp 5.000<br />๑
+              9 Bulan: Rp 7.500<br />๑ 1 Tahun: Rp 8.000
+            </li>
+            <li>
+              Private<br />- 1 Tahun: Rp 15.000<br /><em>Garansi 9 Bulan</em>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Keunggulan & Garansi -->
+    <section id="garansi" class="bg-neutral-950/40 border-y border-white/5">
+      <div class="max-w-4xl mx-auto px-4 py-16 text-center">
+        <h2 class="text-2xl md:text-4xl font-extrabold">
+          📌 Keunggulan & Garansi
+        </h2>
+        <ul class="mt-6 text-neutral-300 space-y-3 text-left max-w-md mx-auto">
+          <li>✅ Full garansi sesuai masa aktif langganan</li>
+          <li>✅ Garansi berlaku selama mematuhi S&K</li>
+          <li>✅ Akun resmi dari seller terpercaya</li>
+          <li>✅ Resolusi Ultra HD 4K untuk Netflix</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="max-w-4xl mx-auto px-4 py-16">
+      <h2 class="text-2xl md:text-4xl font-extrabold text-center">❓ FAQ</h2>
+      <div class="mt-8 space-y-6">
+        <div class="card">
+          <h3 class="font-semibold">Apa bedanya 1U1P, 1P1U, dan 1P2U?</h3>
+          <p class="text-neutral-300 mt-2">
+            1U1P = 1 user 1 profil khusus. 1P1U = istilah lain untuk profil
+            khusus 1 user. 1P2U = 1 profil dipakai 2 user (history bercampur).
+          </p>
+        </div>
+        <div class="card">
+          <h3 class="font-semibold">
+            Apakah ada garansi jika akun bermasalah?
+          </h3>
+          <p class="text-neutral-300 mt-2">
+            Ya, full garansi selama masa aktif sesuai S&K.
+          </p>
+        </div>
+        <div class="card">
+          <h3 class="font-semibold">Bagaimana kualitas streaming Netflix?</h3>
+          <p class="text-neutral-300 mt-2">
+            Semua paket Netflix mendukung resolusi hingga Ultra HD 4K.
+          </p>
+        </div>
+        <div class="card">
+          <h3 class="font-semibold">Apakah aman digunakan di HP / Smart TV?</h3>
+          <p class="text-neutral-300 mt-2">
+            Aman digunakan di perangkat resmi yang mendukung aplikasi
+            masing-masing layanan.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="cta-container">
+        <div class="cta-icon">
+          <!-- Rocket SVG -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            fill="white"
+            width="60"
+            height="60"
+          >
+            <path
+              d="M156 429c-8 20-27 39-47 47l-21 8 8-21c8-20 27-39 47-47l13-5zm173-173L218 367c-7-4-15-10-22-17s-13-15-17-22l111-111 39 39zm71-71c-23 23-48 36-72 43l-54-54c7-24 20-49 43-72 25-25 58-42 90-52 10-3 20 6 17 17-10 32-27 65-52 90z"
+            />
+          </svg>
+        </div>
+        <div class="cta-text">
+          <h2>Mau Langganan Sekarang?</h2>
+          <p>Klik tombol di bawah untuk langsung order via WhatsApp.</p>
+          <a href="https://wa.me/62xxxxxxxxx" class="btn-whatsapp">
+            💬 Chat via WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-950 border-t border-white/10 text-neutral-300">
+      <div
+        class="max-w-6xl mx-auto px-4 py-14 grid md:grid-cols-3 gap-10 text-center md:text-left"
+      >
+        <!-- Tentang Kami -->
+        <div>
+          <h4 class="text-lg font-bold mb-3 text-white">Tentang Kami</h4>
+          <p class="text-sm leading-relaxed">
+            Premium Store adalah penyedia layanan akun premium terpercaya.
+            Menawarkan Netflix, ChatGPT, Vidio, CapCut, Canva, dan Viu dengan
+            harga terbaik serta garansi resmi.
+          </p>
+        </div>
+
+        <!-- Kontak -->
+        <div>
+          <h4 class="text-lg font-bold mb-3 text-white">Kontak</h4>
+          <div class="flex justify-center md:justify-start gap-5 mt-2">
+            <!-- WhatsApp -->
+            <a
+              href="https://wa.me/6285762128253"
+              target="_blank"
+              class="hover:scale-110 transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                class="w-7 h-7"
+              >
+                <path
+                  d="M20.52 3.48A11.9 11.9 0 0012 .06C5.42.06.06 5.42.06 12a11.9 11.9 0 003.42 8.52L2.1 23.94l3.66-1.35A11.9 11.9 0 0012 23.94c6.58 0 11.94-5.36 11.94-11.94 0-3.19-1.24-6.19-3.42-8.52zM12 21.3a9.28 9.28 0 01-4.74-1.3l-.34-.2-2.7.99.96-2.76-.22-.36A9.27 9.27 0 012.7 12c0-5.13 4.17-9.3 9.3-9.3 2.48 0 4.81.97 6.56 2.74a9.27 9.27 0 012.74 6.56c0 5.13-4.17 9.3-9.3 9.3z"
+                />
+              </svg>
+            </a>
+
+            <!-- Instagram -->
+            <a
+              href="https://instagram.com/yourstore"
+              target="_blank"
+              class="hover:scale-110 transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                class="w-7 h-7"
+              >
+                <path
+                  d="M12 2.2c3.2 0 3.6.01 4.9.07 1.17.05 1.97.24 2.43.4.61.24 1.04.53 1.5.99.46.46.75.89.99 1.5.16.46.35 1.26.4 2.43.06 1.29.07 1.69.07 4.9s-.01 3.61-.07 4.9c-.05 1.17-.24 1.97-.4 2.43-.24.61-.53 1.04-.99 1.5-.46.46-.89.75-1.5.99-.46.16-1.26.35-2.43.4-1.29.06-1.69.07-4.9.07s-3.61-.01-4.9-.07c-1.17-.05-1.97-.24-2.43-.4-.61-.24-1.04-.53-1.5-.99-.46-.46-.75-.89-.99-1.5-.16-.46-.35-1.26-.4-2.43C2.21 15.61 2.2 15.21 2.2 12s.01-3.61.07-4.9c.05-1.17.24-1.97.4-2.43.24-.61.53-1.04.99-1.5.46-.46.89-.75 1.5-.99.46-.16 1.26-.35 2.43-.4C8.39 2.21 8.79 2.2 12 2.2m0-2.2C8.74 0 8.33.01 7.05.07 5.77.12 4.73.33 3.9.65c-.87.34-1.6.8-2.33 1.53C.8 3.1.34 3.83 0 4.7c-.32.83-.53 1.87-.58 3.15C-.01 8.67 0 9.07 0 12s.01 3.33.07 4.61c.05 1.28.26 2.32.58 3.15.34.87.8 1.6 1.53 2.33.73.73 1.46 1.19 2.33 1.53.83.32 1.87.53 3.15.58C8.67 23.99 9.07 24 12 24s3.33-.01 4.61-.07c1.28-.05 2.32-.26 3.15-.58.87-.34 1.6-.8 2.33-1.53.73-.73 1.19-1.46 1.53-2.33.32-.83.53-1.87.58-3.15.06-1.28.07-1.68.07-4.61s-.01-3.33-.07-4.61c-.05-1.28-.26-2.32-.58-3.15-.34-.87-.8-1.6-1.53-2.33C21.1.8 20.37.34 19.5 0c-.83-.32-1.87-.53-3.15-.58C15.33-.01 14.93 0 12 0z"
+                />
+                <circle cx="12" cy="12" r="3.2" />
+              </svg>
+            </a>
+
+            <!-- Telegram -->
+            <a
+              href="https://t.me/yourstore"
+              target="_blank"
+              class="hover:scale-110 transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                class="w-7 h-7"
+              >
+                <path
+                  d="M9.993 15.202l-.396 5.59c.566 0 .811-.243 1.104-.534l2.645-2.51 5.48 4.006c1.004.552 1.72.262 1.978-.928l3.588-16.84c.317-1.493-.54-2.078-1.51-1.713L1.615 9.31c-1.452.566-1.43 1.378-.247 1.744l5.69 1.78L18.998 5.21c.612-.405 1.168-.181.711.224"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div
+        class="border-t border-white/5 text-center text-xs text-neutral-500 py-4"
+      >
+        © 2025 Premium Store – All Rights Reserved
+      </div>
+    </footer>
+  </body>
+</html>
