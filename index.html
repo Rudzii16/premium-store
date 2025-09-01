@@ -574,6 +574,11 @@
         </p>
       </div>
     </footer>
+    <!-- audio -->
+    <audio id="bg-music" autoplay loop muted>
+      <source src="assets/soundhoreqq.mp3" type="audio/mpeg" />
+      Browser kamu tidak mendukung audio.
+    </audio>
 
     <script>
       // FAQ Accordion
@@ -582,6 +587,23 @@
         const question = item.querySelector(".faq-question");
         question.addEventListener("click", () => {
           item.classList.toggle("active");
+        });
+      });
+    </script>
+    <script>
+      const audio = document.getElementById("bg-music");
+      window.addEventListener("load", () => {
+        // coba langsung play
+        audio.play().catch(() => {
+          // kalau gagal, tunggu klik user
+          document.body.addEventListener(
+            "click",
+            () => {
+              audio.muted = false;
+              audio.play();
+            },
+            { once: true }
+          );
         });
       });
     </script>
