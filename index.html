@@ -8,6 +8,16 @@
       name="description"
       content="Jual akun premium Netflix, ChatGPT, Vidio Platinum, CapCut Pro, Canva, dan Viu dengan harga terbaik dan bergaransi."
     />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
@@ -41,7 +51,7 @@
                 <a href="#faq" class="hover:text-red-400">FAQ</a>
                 <!-- ✅ Order langsung ke WhatsApp -->
                 <a
-                  href="https://wa.me/6281234567890"
+                  href="https://wa.me/6285762128253"
                   target="_blank"
                   class="hover:text-green-400"
                 >
@@ -63,16 +73,16 @@
         <!-- Mobile Nav -->
         <div
           id="mobile-menu"
-          class="hidden flex-col bg-black/90 text-white font-medium space-y-4 px-6 py-6 md:hidden transition-all duration-300"
+          class="hidden flex-col bg-gradient-to-r from-pink-500 via-purple-600 to-indigo-600 text-white font-medium space-y-4 px-6 py-6 md:hidden transition-all duration-300 rounded-b-2xl shadow-lg"
         >
-          <a href="#home" class="hover:text-red-400">Home</a>
-          <a href="#paket" class="hover:text-red-400">Paket</a>
-          <a href="#faq" class="hover:text-red-400">FAQ</a>
-          <!-- ✅ Order langsung ke WhatsApp -->
+          <a href="#home" class="hover:text-yellow-300">Home</a>
+          <a href="#paket" class="hover:text-yellow-300">Paket</a>
+          <a href="#faq" class="hover:text-yellow-300">FAQ</a>
+          <!-- Order Button / Link -->
           <a
-            href="https://wa.me/6285762128253"
+            href="https://wa.me/6285761128253?text=Min%20saya%20mau%20order%20apps%20premium%20🙏"
             target="_blank"
-            class="hover:text-green-400"
+            class="hover:text-green-300 font-semibold"
           >
             Order
           </a>
@@ -122,11 +132,7 @@
           maksimal!
         </p>
         <div class="mt-6">
-          <span
-            class="bg-yellow-400 text-black px-4 py-1 rounded-full text-sm font-semibold shadow"
-          >
-            🔥 Best Seller
-          </span>
+          <a href="#netflix" class="best-seller-badge"> 🔥 Best Seller </a>
         </div>
       </div>
     </section>
@@ -138,7 +144,7 @@
       </h2>
       <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Netflix -->
-        <div class="card">
+        <div class="card" id="netflix">
           <h3 class="card-title">🎬 NETFLIX PREMIUM</h3>
           <ul class="card-list">
             <li>🔹 1U1P: 1 Bulan Rp 25.500 | 3 Bulan Rp 85.000</li>
@@ -227,51 +233,187 @@
     </section>
 
     <!-- Keunggulan & Garansi -->
-    <section id="garansi" class="bg-neutral-950/40 border-y border-white/5">
-      <div class="max-w-4xl mx-auto px-4 py-16 text-center">
-        <h2 class="text-2xl md:text-4xl font-extrabold">
-          📌 Keunggulan & Garansi
-        </h2>
-        <ul class="mt-6 text-neutral-300 space-y-3 text-left max-w-md mx-auto">
-          <li>✅ Full garansi sesuai masa aktif langganan</li>
-          <li>✅ Garansi berlaku selama mematuhi S&K</li>
-          <li>✅ Akun resmi dari seller terpercaya</li>
-          <li>✅ Resolusi Ultra HD 4K untuk Netflix</li>
-        </ul>
+    <section id="garansi" class="garansi-section">
+      <h2>📌 Keunggulan & Garansi</h2>
+      <div class="garansi-grid">
+        <div class="garansi-card">
+          <div class="garansi-icon">
+            <!-- Shield Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
+              />
+            </svg>
+          </div>
+          <p>✅ Full garansi sesuai masa aktif langganan</p>
+        </div>
+
+        <div class="garansi-card">
+          <div class="garansi-icon">
+            <!-- Document Check Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2l4-4m6-2v10a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h7l5 5z"
+              />
+            </svg>
+          </div>
+          <p>✅ Garansi berlaku selama mematuhi S&K</p>
+        </div>
+
+        <div class="garansi-card">
+          <div class="garansi-icon">
+            <!-- User Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5.121 17.804A9 9 0 1118.879 6.196A9 9 0 015.121 17.804z"
+              />
+            </svg>
+          </div>
+          <p>✅ Akun resmi dari seller terpercaya</p>
+        </div>
+
+        <div class="garansi-card">
+          <div class="garansi-icon">
+            <!-- Video Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14V10zM4 6h8a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2z"
+              />
+            </svg>
+          </div>
+          <p>✅ Resolusi Ultra HD 4K untuk Netflix</p>
+        </div>
       </div>
     </section>
 
     <!-- FAQ -->
-    <section id="faq" class="max-w-4xl mx-auto px-4 py-16">
-      <h2 class="text-2xl md:text-4xl font-extrabold text-center">❓ FAQ</h2>
-      <div class="mt-8 space-y-6">
-        <div class="card">
-          <h3 class="font-semibold">Apa bedanya 1U1P, 1P1U, dan 1P2U?</h3>
-          <p class="text-neutral-300 mt-2">
+    <section id="faq" class="faq-section">
+      <h2>❓ FAQ</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Apa bedanya 1U1P, 1P1U, dan 1P2U?</span>
+            <svg
+              class="faq-icon w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </div>
+          <div class="faq-answer">
             1U1P = 1 user 1 profil khusus. 1P1U = istilah lain untuk profil
             khusus 1 user. 1P2U = 1 profil dipakai 2 user (history bercampur).
-          </p>
+          </div>
         </div>
-        <div class="card">
-          <h3 class="font-semibold">
-            Apakah ada garansi jika akun bermasalah?
-          </h3>
-          <p class="text-neutral-300 mt-2">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Apakah ada garansi jika akun bermasalah?</span>
+            <svg
+              class="faq-icon w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </div>
+          <div class="faq-answer">
             Ya, full garansi selama masa aktif sesuai S&K.
-          </p>
+          </div>
         </div>
-        <div class="card">
-          <h3 class="font-semibold">Bagaimana kualitas streaming Netflix?</h3>
-          <p class="text-neutral-300 mt-2">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Bagaimana kualitas streaming Netflix?</span>
+            <svg
+              class="faq-icon w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </div>
+          <div class="faq-answer">
             Semua paket Netflix mendukung resolusi hingga Ultra HD 4K.
-          </p>
+          </div>
         </div>
-        <div class="card">
-          <h3 class="font-semibold">Apakah aman digunakan di HP / Smart TV?</h3>
-          <p class="text-neutral-300 mt-2">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Apakah aman digunakan di HP / Smart TV?</span>
+            <svg
+              class="faq-icon w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </div>
+          <div class="faq-answer">
             Aman digunakan di perangkat resmi yang mendukung aplikasi
             masing-masing layanan.
-          </p>
+          </div>
         </div>
       </div>
     </section>
@@ -315,7 +457,8 @@
 
         <!-- Button -->
         <a
-          href="https://wa.me/6285762128253"
+          href="https://wa.me/6285762128253?text=Halo%20Admin%20Premium%20Store%20🙏%0ASaya%20mau%20order%20akun%20premium%20nih%20🔥%0ATolong%20info%20paket%20yang%20tersedia%20ya%20😊"
+          target="_blank"
           class="inline-block neon-button text-white text-lg font-bold px-8 py-4 rounded-full shadow-xl transition transform hover:scale-110"
         >
           💬 Chat via WhatsApp
@@ -324,88 +467,76 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-neutral-950 border-t border-white/10 text-neutral-300">
+    <footer class="relative text-center text-white py-12 overflow-hidden">
+      <!-- Background Logo -->
       <div
-        class="max-w-6xl mx-auto px-4 py-14 grid md:grid-cols-3 gap-10 text-center md:text-left"
+        class="footer-logos opacity-10 absolute inset-0 flex justify-center items-center gap-8"
       >
-        <!-- Tentang Kami -->
-        <div>
-          <h4 class="text-lg font-bold mb-3 text-white">Tentang Kami</h4>
-          <p class="text-sm leading-relaxed">
-            Premium Store adalah penyedia layanan akun premium terpercaya.
-            Menawarkan Netflix, ChatGPT, Vidio, CapCut, Canva, dan Viu dengan
-            harga terbaik serta garansi resmi.
-          </p>
-        </div>
+        <img
+          src="netflix-logo-transparent.png"
+          alt="Netflix"
+          class="w-20 h-auto"
+        />
+        <img src="chatgpt.jpg" alt="ChatGPT" class="w-20 h-auto" />
+        <img src="capcutpng.webp" alt="CapCut" class="w-20 h-auto" />
+        <img src="canva.webp" alt="Canva" class="w-20 h-auto" />
+        <img src="Viu-Logo.jpg" alt="Viu" class="w-20 h-auto" />
+      </div>
+
+      <!-- Konten -->
+      <div class="footer-content relative z-10 max-w-3xl mx-auto">
+        <h3 class="footer-title">Tentang Kami</h3>
+        <p class="mt-3 text-gray-200 leading-relaxed">
+          Premium Store adalah penyedia layanan akun premium terpercaya.
+          Menawarkan Netflix, ChatGPT, Vidio, CapCut, Canva, dan Viu dengan
+          harga terbaik serta garansi resmi.
+        </p>
 
         <!-- Kontak -->
-        <div>
-          <h4 class="text-lg font-bold mb-3 text-white">Kontak</h4>
-          <div class="flex justify-center md:justify-start gap-5 mt-2">
-            <!-- WhatsApp -->
-            <a
-              href="https://wa.me/6285762128253"
-              target="_blank"
-              class="hover:scale-110 transition"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                class="w-7 h-7"
-              >
-                <path
-                  d="M20.52 3.48A11.9 11.9 0 0012 .06C5.42.06.06 5.42.06 12a11.9 11.9 0 003.42 8.52L2.1 23.94l3.66-1.35A11.9 11.9 0 0012 23.94c6.58 0 11.94-5.36 11.94-11.94 0-3.19-1.24-6.19-3.42-8.52zM12 21.3a9.28 9.28 0 01-4.74-1.3l-.34-.2-2.7.99.96-2.76-.22-.36A9.27 9.27 0 012.7 12c0-5.13 4.17-9.3 9.3-9.3 2.48 0 4.81.97 6.56 2.74a9.27 9.27 0 012.74 6.56c0 5.13-4.17 9.3-9.3 9.3z"
-                />
-              </svg>
-            </a>
+        <div class="footer-socials flex justify-center gap-6 text-2xl">
+          <!-- WhatsApp -->
+          <a
+            href="https://wa.me/6285762128253?text=Halo%20Admin%20Premium%20Store%20🙏%0ASaya%20mau%20order%20akun%20premium%20nih%20🔥"
+            target="_blank"
+            class="hover:text-green-400"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
 
-            <!-- Instagram -->
-            <a
-              href="https://www.instagram.com/goodboy_1605?igsh=anRtOWRodnV6MHpq"
-              target="_blank"
-              class="hover:scale-110 transition"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                class="w-7 h-7"
-              >
-                <path
-                  d="M12 2.2c3.2 0 3.6.01 4.9.07 1.17.05 1.97.24 2.43.4.61.24 1.04.53 1.5.99.46.46.75.89.99 1.5.16.46.35 1.26.4 2.43.06 1.29.07 1.69.07 4.9s-.01 3.61-.07 4.9c-.05 1.17-.24 1.97-.4 2.43-.24.61-.53 1.04-.99 1.5-.46.46-.89.75-1.5.99-.46.16-1.26.35-2.43.4-1.29.06-1.69.07-4.9.07s-3.61-.01-4.9-.07c-1.17-.05-1.97-.24-2.43-.4-.61-.24-1.04-.53-1.5-.99-.46-.46-.75-.89-.99-1.5-.16-.46-.35-1.26-.4-2.43C2.21 15.61 2.2 15.21 2.2 12s.01-3.61.07-4.9c.05-1.17.24-1.97.4-2.43.24-.61.53-1.04.99-1.5.46-.46.89-.75 1.5-.99.46-.16 1.26-.35 2.43-.4C8.39 2.21 8.79 2.2 12 2.2m0-2.2C8.74 0 8.33.01 7.05.07 5.77.12 4.73.33 3.9.65c-.87.34-1.6.8-2.33 1.53C.8 3.1.34 3.83 0 4.7c-.32.83-.53 1.87-.58 3.15C-.01 8.67 0 9.07 0 12s.01 3.33.07 4.61c.05 1.28.26 2.32.58 3.15.34.87.8 1.6 1.53 2.33.73.73 1.46 1.19 2.33 1.53.83.32 1.87.53 3.15.58C8.67 23.99 9.07 24 12 24s3.33-.01 4.61-.07c1.28-.05 2.32-.26 3.15-.58.87-.34 1.6-.8 2.33-1.53.73-.73 1.19-1.46 1.53-2.33.32-.83.53-1.87.58-3.15.06-1.28.07-1.68.07-4.61s-.01-3.33-.07-4.61c-.05-1.28-.26-2.32-.58-3.15-.34-.87-.8-1.6-1.53-2.33C21.1.8 20.37.34 19.5 0c-.83-.32-1.87-.53-3.15-.58C15.33-.01 14.93 0 12 0z"
-                />
-                <circle cx="12" cy="12" r="3.2" />
-              </svg>
-            </a>
+          <!-- Instagram -->
+          <a
+            href="https://www.instagram.com/goodboy_1605"
+            target="_blank"
+            class="hover:text-pink-400"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
 
-            <!-- Telegram -->
-            <a
-              href="https://t.me/Rudziped"
-              target="_blank"
-              class="hover:scale-110 transition"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                class="w-7 h-7"
-              >
-                <path
-                  d="M9.993 15.202l-.396 5.59c.566 0 .811-.243 1.104-.534l2.645-2.51 5.48 4.006c1.004.552 1.72.262 1.978-.928l3.588-16.84c.317-1.493-.54-2.078-1.51-1.713L1.615 9.31c-1.452.566-1.43 1.378-.247 1.744l5.69 1.78L18.998 5.21c.612-.405 1.168-.181.711.224"
-                />
-              </svg>
-            </a>
-          </div>
+          <!-- Telegram -->
+          <a
+            href="https://t.me/Rudziped"
+            target="_blank"
+            class="hover:text-blue-400"
+          >
+            <i class="fab fa-telegram"></i>
+          </a>
         </div>
-      </div>
 
-      <!-- Copyright -->
-      <div
-        class="border-t border-white/5 text-center text-xs text-neutral-500 py-4"
-      >
-        © 2025 Premium Store – All Rights Reserved
+        <p class="text-sm text-gray-400 mt-10">
+          © 2025 Premium Store – All Rights Reserved
+        </p>
       </div>
     </footer>
+
+    <script>
+      // FAQ Accordion
+      const faqItems = document.querySelectorAll(".faq-item");
+      faqItems.forEach((item) => {
+        const question = item.querySelector(".faq-question");
+        question.addEventListener("click", () => {
+          item.classList.toggle("active");
+        });
+      });
+    </script>
   </body>
 </html>
